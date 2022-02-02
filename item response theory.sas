@@ -144,6 +144,8 @@ proc irt data=dataset_drop plots=(scree iic tic);
  	   GIFT
  	   HOME
  	   TASTE
+	   /*added this variable which apport no contribution to avoid the floating pointer exception*/
+		supermarket
  	   ;
 run;
 
@@ -154,7 +156,10 @@ proc irt data=dataset_drop plots=(scree iic tic);
  	   GIFT
  	   HOME
  	   TASTE
- 	   ;
+	   /*same as before*/
+		brand_awarness
+		supermarket
+;
 run;
 /* factor2*/
 proc irt data=dataset_drop plots=(scree iic tic);
